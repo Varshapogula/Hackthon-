@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function NeighboringCountries() {
-  const [neighboringData, setNeighboringData] = useState([]); // State for fetched neighboring countries data
+  const [neighboringData, setNeighboringData] = useState([]); 
 
   useEffect(() => {
     // Fetch data when component mounts
