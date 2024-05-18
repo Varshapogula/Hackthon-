@@ -1,0 +1,15 @@
+body{
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    text-align: center;
+    padding: 200px;
+}
+#diceinCanvas{
+    width:200px;
+    height:200px;
+    border: ipx solid #000000;
+    justify-content: center;
+    background-color: #ff006f;
+    
+}
