@@ -1,4 +1,4 @@
-// NeighboringCountries.js
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -9,7 +9,7 @@ function NeighboringCountries() {
     // Fetch data when component mounts
     axios.get('https://disease.sh/v3/covid-19/countries')
       .then(response => {
-        // Filter data for required neighboring countries
+        
         const neighboringCountries = response.data.filter(country =>
           ['India', 'Sri Lanka', 'Bangladesh', 'China', 'Nepal'].includes(country.country)
         );
@@ -34,7 +34,7 @@ function NeighboringCountries() {
           </tr>
         </thead>
         <tbody>
-          {/* Map over neighboringData to render table rows */}
+          
           {neighboringData.map(country => (
             <tr key={country.country}>
               <td>{country.country}</td>
